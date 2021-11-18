@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+.header {
+  background-color: #120052;
+  color: white;
+  height: 100vh; }
+  .header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    padding-inline: 2rem; }
+  .header__logo {
+    font-family: "Faster One", cursive;
+    font-size: 2rem; }
+  .header__logo-link {
+    text-decoration: none;
+    color: white; }
+  .header__nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; }
+  .header__nav-link {
+    text-decoration: none;
+    color: white; }
+  .header__nav-item + .header__nav-item {
+    margin-left: 2.5rem; }
+  .header__content-container {
+    display: flex;
+    padding-inline: 2rem; }
+  .header__icon-image {
+    max-height: 313px; }

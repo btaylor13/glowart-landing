@@ -1,0 +1,14 @@
+{
+  "name": "glowart-landing",
+  "version": "1.0.0",
+  "description": "Glow Vibes Art Landing Page for Mintbean Hackathon November 2021",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

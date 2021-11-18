@@ -1,0 +1,58 @@
+@import "base";
+@import "variables";
+
+body {
+  font-family: $ff-primary;
+}
+
+.header {
+  background-color: $color-purple-dark;
+  color: $color-white;
+  height: 100vh;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    padding-inline: 2rem;
+  }
+
+  &__logo {
+    font-family: $ff-display;
+    font-size: 2rem;
+  }
+
+  &__logo-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__nav-item + &__nav-item {
+    margin-left: 2.5rem;
+  }
+
+  &__content-container {
+    display: flex;
+    padding-inline: 2rem;
+  }
+
+  &__heading-1 {
+  }
+  &__description {
+  }
+  &__icon-image {
+    max-height: 313px;
+  }
+}
