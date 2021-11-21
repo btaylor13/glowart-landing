@@ -3,6 +3,15 @@
 
 body {
   font-family: $ff-primary;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 85rem;
 }
 
 .header {
@@ -15,12 +24,13 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 3.5rem;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
   }
 
   &__logo {
     font-family: $ff-display;
     font-size: 2rem;
+    letter-spacing: 5px;
   }
 
   &__logo-link {
@@ -44,15 +54,171 @@ body {
   }
 
   &__content-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
     padding-inline: 2rem;
+    margin-block: 9rem;
+  }
+
+  &__text-content {
   }
 
   &__heading-1 {
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin-bottom: 1.7rem;
+    text-shadow: 4px 4px 7px #b9aaaa;
   }
   &__description {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  &__images {
+    justify-self: center;
+    display: grid;
   }
   &__icon-image {
     max-height: 313px;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+  }
+  &__btn-container {
+    margin-top: 3rem;
+  }
+  &__make-art-btn {
+    background-color: $color-purple-medium;
+    padding: 0.7em 1.7em;
+    border-radius: 3rem;
+    color: $color-white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  &__palette-icon {
+    color: white;
+    z-index: 300;
   }
 }
+
+// HEADER MEDIA QUERIES
+
+@media only screen and (max-width: 44.9rem) {
+}
+
+@media only screen and (max-width: 34.9rem) {
+  .header {
+    &__content-container {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__text-content {
+      margin-bottom: 5rem;
+    }
+
+    &__heading-1 {
+      font-size: 2.1rem;
+    }
+
+    &__description {
+      font-size: 0.9rem;
+      line-height: 1.7rem;
+    }
+  }
+}
+
+// DEMO VIDEO SECTION
+.demo {
+  margin-bottom: 3rem;
+  &__heading {
+    text-align: center;
+    margin-top: 2rem;
+    color: $color-purple-dark;
+  }
+
+  &__video {
+    margin-top: 4rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+  }
+
+  &__btn-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__try-btn {
+    margin: 0 auto;
+    text-align: center;
+    color: $color-purple-dark;
+  }
+}
+
+// DEMO MEDIA QUERIES
+
+// TUTORIAL SECTION
+.tutorial {
+  &__container {
+    background-color: $color-purple-light;
+  }
+
+  padding-top: 3rem;
+  &__heading {
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.5);
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    row-gap: 3rem;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    justify-items: center;
+  }
+
+  &__instructions {
+  }
+
+  &__stepnum {
+    font-family: "Faster One", "Open Sans";
+    border-radius: 50%;
+    color: #120052;
+    background-color: white;
+    width: 4.0625rem;
+    line-height: 4.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__description {
+    display: inline-block;
+  }
+
+  &__image-container {
+  }
+
+  &__image {
+  }
+}
+// TUTORIAL MEDIA QUERIES

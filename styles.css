@@ -9,7 +9,15 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden; }
+
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 85rem; }
 
 .header {
   background-color: #120052;
@@ -20,10 +28,11 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 3.5rem;
-    padding-inline: 2rem; }
+    padding-inline: 3rem; }
   .header__logo {
     font-family: "Faster One", cursive;
-    font-size: 2rem; }
+    font-size: 2rem;
+    letter-spacing: 5px; }
   .header__logo-link {
     text-decoration: none;
     color: white; }
@@ -37,7 +46,106 @@ body {
   .header__nav-item + .header__nav-item {
     margin-left: 2.5rem; }
   .header__content-container {
-    display: flex;
-    padding-inline: 2rem; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    padding-inline: 2rem;
+    margin-block: 9rem; }
+  .header__heading-1 {
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin-bottom: 1.7rem;
+    text-shadow: 4px 4px 7px #b9aaaa; }
+  .header__description {
+    font-size: 1rem;
+    line-height: 1.7rem; }
+  .header__images {
+    justify-self: center;
+    display: grid; }
   .header__icon-image {
-    max-height: 313px; }
+    max-height: 313px;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center; }
+  .header__btn-container {
+    margin-top: 3rem; }
+  .header__make-art-btn {
+    background-color: #663ff3;
+    padding: 0.7em 1.7em;
+    border-radius: 3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500; }
+  .header__palette-icon {
+    color: white;
+    z-index: 300; }
+
+@media only screen and (max-width: 34.9rem) {
+  .header__content-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center; }
+  .header__text-content {
+    margin-bottom: 5rem; }
+  .header__heading-1 {
+    font-size: 2.1rem; }
+  .header__description {
+    font-size: 0.9rem;
+    line-height: 1.7rem; } }
+
+.demo {
+  margin-bottom: 3rem; }
+  .demo__heading {
+    text-align: center;
+    margin-top: 2rem;
+    color: #120052; }
+  .demo__video {
+    margin-top: 4rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem; }
+  .demo__btn-container {
+    margin: 0 auto;
+    text-align: center; }
+  .demo__try-btn {
+    margin: 0 auto;
+    text-align: center;
+    color: #120052; }
+
+.tutorial {
+  padding-top: 3rem; }
+  .tutorial__container {
+    background-color: #e1dfe7; }
+  .tutorial__heading {
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.5);
+    margin-bottom: 3rem; }
+  .tutorial__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    row-gap: 3rem; }
+  .tutorial__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center; }
+  .tutorial__stepnum {
+    font-family: "Faster One", "Open Sans";
+    border-radius: 50%;
+    color: #120052;
+    background-color: white;
+    width: 4.0625rem;
+    line-height: 4.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center; }
+  .tutorial__description {
+    display: inline-block; }

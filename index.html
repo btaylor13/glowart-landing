@@ -13,51 +13,145 @@
       href="https://fonts.googleapis.com/css2?family=Faster+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
     <title>Glow Vibes Art</title>
     <body>
-      <header class="header">
-        <nav class="header__navigation">
-          <div class="header__logo logo">
-            <a class="header__logo-link" href="#">Glow Vibes Art</a>
+      <div class="page-container">
+        <header class="header">
+          <nav class="header__navigation">
+            <div class="header__logo logo">
+              <a class="header__logo-link" href="#">Glow Vibes Art</a>
+            </div>
+            <ul class="header__nav-links">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">How it works</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Try it now</a>
+              </li>
+              <li class="header__nav-item contact-link">
+                <a class="header__nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__content-container container">
+            <div class="header__text-content">
+              <h1 class="header__heading-1">Embrace Nostalgia</h1>
+              <p class="header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <div class="header__btn-container">
+                <a href="#" class="header__make-art-btn"
+                  >Make art now
+                  <i class="fa fa-palette header__palette-icon"></i
+                ></a>
+              </div>
+            </div>
+            <div class="header__images">
+              <img
+                class="header__icon-image"
+                src="images/icons/roller-skates.png"
+                alt="pair of roller skates"
+              />
+            </div>
           </div>
-          <ul class="header__nav-links">
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">About</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">How it works</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Try it now</a>
-            </li>
-            <li class="header__nav-item contact-link">
-              <a class="header__nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__content-container">
-          <div class="header__text-content">
-            <h1 class="header__heading-1">Embrace Nostalgia</h1>
-            <p class="header__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
+        </header>
+        <!-- Demo Video -->
+        <section class="demo__container demo container">
+          <h2 class="demo__heading">See how it works!</h2>
+          <video width="70%" height="auto" controls class="demo__video">
+            <source src="" type="video/mp4" />
+            Your browser does not support this video content.
+          </video>
+          <div class="demo__btn-container">
+            <a href="#" class="demo__try-btn"
+              >Make your own art now <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-          <div class="header__images">
-            <img
-              class="header__icon-image"
-              src="images/icons/roller-skates.png"
-              alt="pair of roller skates"
-            />
+        </section>
+        <!-- Tutorial Section -->
+        <section class="tutorial__container">
+          <div class="tutorial container">
+            <h2 class="tutorial__heading">Glow Art Tutorial</h2>
+
+            <div class="tutorial__content">
+              <div class="tutorial__row">
+                <div class="tutorial__instructions">
+                  <!-- Step 1 of Tutorial -->
+                  <span class="tutorial__stepnum">01</span>
+                  <p class="tutorial__description">
+                    Select a photo. Search for an image you'd like to recreate
+                    or to inspire your own creation. You can also choose an
+                    image from our library.
+                  </p>
+                </div>
+                <div class="tutorial__image-container">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder"
+                    class="tutorial__image placeholder"
+                  />
+                </div>
+              </div>
+              <!-- Step 2 of Tutorial -->
+              <div class="tutorial__row">
+                <div class="tutorial__image-container">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder"
+                    class="tutorial__image placeholder"
+                  />
+                </div>
+                <div class="tutorial__instructions tutorial__instructions--2">
+                  <span class="tutorial__stepnum tutorial__stepnum--2">02</span>
+                  <p class="tutorial__description tutorial__description--2">
+                    Once you upload an image, we'll extract the major colors for
+                    your use! Simply click on which color you would like to use,
+                    and start clicking away.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 of Tutorial -->
+              <div class="tutorial__row">
+                <div class="tutorial__instructions">
+                  <span class="tutorial__stepnum">03</span>
+                  <p class="tutorial__description">
+                    Use the colors to recreate the image on the pixel grid OR
+                    use the colors to get the creative juices flowing and make
+                    your own masterpiece!
+                  </p>
+                </div>
+                <div class="tutorial__image-container">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder"
+                    class="tutorial__image placeholder"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </header>
+        </section>
+        <!-- Contact Section -->
+      </div>
     </body>
   </head>
 </html>
