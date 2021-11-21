@@ -26,23 +26,23 @@
     <title>Glow Vibes Art</title>
     <body>
       <div class="page-container">
-        <header class="header">
+        <header class="header" id="header">
           <nav class="header__navigation">
             <div class="header__logo logo">
               <a class="header__logo-link" href="#">Glow Vibes Art</a>
             </div>
             <ul class="header__nav-links">
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">About</a>
+                <a class="header__nav-link" href="#header">About</a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">How it works</a>
+                <a class="header__nav-link" href="#demo">How it works</a>
               </li>
               <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Try it now</a>
+                <a class="header__nav-link" href="#tutorial">Try it now</a>
               </li>
               <li class="header__nav-item contact-link">
-                <a class="header__nav-link" href="#">Contact Us</a>
+                <a class="header__nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </nav>
@@ -74,7 +74,7 @@
           </div>
         </header>
         <!-- Demo Video -->
-        <section class="demo__container demo container">
+        <section class="demo__container demo container" id="demo">
           <h2 class="demo__heading">See how it works!</h2>
           <video width="70%" height="auto" controls class="demo__video">
             <source src="" type="video/mp4" />
@@ -87,7 +87,7 @@
           </div>
         </section>
         <!-- Tutorial Section -->
-        <section class="tutorial__container">
+        <section class="tutorial__container" id="tutorial">
           <div class="tutorial container">
             <h2 class="tutorial__heading">Glow Art Tutorial</h2>
 
@@ -105,7 +105,7 @@
                 <div class="tutorial__image-container">
                   <img
                     src="https://via.placeholder.com/150"
-                    alt="placeholder"
+                    alt="step 1 of tutorial"
                     class="tutorial__image placeholder"
                   />
                 </div>
@@ -115,7 +115,7 @@
                 <div class="tutorial__image-container">
                   <img
                     src="https://via.placeholder.com/150"
-                    alt="placeholder"
+                    alt="step 2 of tutorial"
                     class="tutorial__image placeholder"
                   />
                 </div>
@@ -142,7 +142,7 @@
                 <div class="tutorial__image-container">
                   <img
                     src="https://via.placeholder.com/150"
-                    alt="placeholder"
+                    alt="step 3 of tutorial"
                     class="tutorial__image placeholder"
                   />
                 </div>
@@ -151,6 +151,112 @@
           </div>
         </section>
         <!-- Contact Section -->
+        <section class="contact" id="contact">
+          <div class="contact__container container">
+            <h2 class="contact__heading">Meet the Creators</h2>
+            <!-- DALE SIMMONS CONTACT CARD -->
+            <div class="contact__card-container">
+              <div class="contact__card">
+                <div class="contact__image-container">
+                  <img
+                    src="images/profileimgs/dalepic.jpg"
+                    alt="Dale Simmons"
+                    class="contact__image"
+                  />
+                </div>
+                <div class="contact__card-text">
+                  <h3 class="contact__name">Dale Simmons</h3>
+                  <p class="contact__description">
+                    Software Engineer for Glow Vibes Art. Dale is driven by
+                    solving challenging problems and collaborating with a
+                    passionate team to build great things. He is currently
+                    interested in roles as a full-stack developer or software
+                    engineer, and he is open to relocating.
+                  </p>
+                  <div class="contact__social-links">
+                    <div class="contact__github-link contact__icon">
+                      <a href="https://github.com/Revlisc" target="_blank">
+                        <i class="fab fa-github contact__icon-link"></i>
+                      </a>
+                    </div>
+                    <div class="contact__linkedin-link contact__icon">
+                      <a
+                        href="https://www.linkedin.com/in/dalejsimmons/"
+                        target="_blank"
+                      >
+                        <i class="fab fa-linkedin-in contact__icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ARTHUR BAKER CONTACT CARD -->
+              <div class="contact__card">
+                <div
+                  class="contact__image-container contact__image-container--2"
+                ></div>
+                <div class="contact__card-text">
+                  <h3 class="contact__name">Arthur Baker</h3>
+                  <p class="contact__description">
+                    Full Stack Developer for Glow Vibes Art. Arthur is a music
+                    major turned web developer. He loves using problem solving
+                    skills and technical tools to produce elegant and functional
+                    solutions. He builds apps using React, MongoDB, Express,
+                    Node, React Native, and Expo.
+                  </p>
+                  <div class="contact__social-links">
+                    <div class="contact__github-link contact__icon">
+                      <a href="https://github.com/artbaker82" target="_blank">
+                        <i class="fab fa-github contact__icon-link"></i>
+                      </a>
+                    </div>
+                    <div class="contact__linkedin-link contact__icon">
+                      <a
+                        href="https://www.linkedin.com/in/arthur-baker-a88818188/"
+                        target="_blank"
+                      >
+                        <i class="fab fa-linkedin-in contact__icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BRIDGETT TAYLOR CONTACT CARD -->
+              <div class="contact__card">
+                <div
+                  class="contact__image-container contact__image-container--3"
+                ></div>
+                <div class="contact__card-text">
+                  <h3 class="contact__name">Bridgett Taylor</h3>
+                  <p class="contact__description">
+                    Designer for Glow Vibes Art. Bridgett is a recent bootcamp
+                    graduate from Nucamp's Frontend Web Development program. She
+                    enjoys taking website designs and challenging herself to
+                    write more efficient and responsive code each time. She is
+                    based in Spokane, WA but open to remote work.
+                  </p>
+                  <div class="contact__social-links">
+                    <div class="contact__github-link contact__icon">
+                      <a href="https://github.com/btaylor13" target="_blank">
+                        <i class="fab fa-github contact__icon-link"></i>
+                      </a>
+                    </div>
+                    <div class="contact__linkedin-link contact__icon">
+                      <a
+                        href="https://www.linkedin.com/in/bridgett-taylor-dev"
+                        target="_blank"
+                      >
+                        <i class="fab fa-linkedin-in contact__icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </body>
   </head>

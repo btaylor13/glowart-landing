@@ -17,7 +17,7 @@ body {
 .header {
   background-color: $color-purple-dark;
   color: $color-white;
-  height: 100vh;
+  padding-bottom: 5rem;
 
   &__navigation {
     display: flex;
@@ -88,6 +88,7 @@ body {
   }
   &__btn-container {
     margin-top: 3rem;
+    cursor: pointer;
   }
   &__make-art-btn {
     background-color: $color-purple-medium;
@@ -96,6 +97,7 @@ body {
     color: $color-white;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
   }
 
   &__palette-icon {
@@ -130,6 +132,10 @@ body {
     &__description {
       font-size: 0.9rem;
       line-height: 1.7rem;
+    }
+
+    &__icon-image {
+      max-height: 213px;
     }
   }
 }
@@ -171,7 +177,7 @@ body {
     background-color: $color-purple-light;
   }
 
-  padding-top: 3rem;
+  padding-block: 3rem;
   &__heading {
     text-align: center;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.5);
@@ -181,15 +187,13 @@ body {
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    row-gap: 3rem;
+    row-gap: 5rem;
   }
 
   &__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     align-items: center;
-
     justify-items: center;
   }
 
@@ -222,3 +226,105 @@ body {
   }
 }
 // TUTORIAL MEDIA QUERIES
+
+.tutorial {
+}
+
+// CONTACT US SECTION
+.contact {
+  background-color: $color-purple-medium;
+
+  &__container {
+    padding-block: 3rem;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: $color-white;
+    letter-spacing: 0.11em;
+    font-size: 2.5rem;
+    text-shadow: 0px 4px 4px rgba(17, 6, 60, 0.44);
+  }
+
+  &__card {
+    background-color: $color-white;
+    max-width: 19rem;
+    border-radius: 13px;
+  }
+
+  &__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    row-gap: 2rem;
+    justify-items: center;
+  }
+
+  &__image-container {
+    border-radius: 13px 13px 0 0;
+    &--2 {
+      background: url(images/profileimgs/arthur-pic.jpeg) center center;
+      background-size: cover;
+      height: 17rem;
+      width: 100%;
+    }
+    &--3 {
+      background: url(images/profileimgs/bridgett-pic.jpg) center center;
+      background-size: cover;
+      height: 17rem;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    height: 17rem;
+
+    border-radius: 13px 13px 0 0;
+    width: 100%;
+  }
+  &__card-text {
+    text-align: center;
+    width: 87%;
+    margin: 0 auto;
+    padding-block: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__name {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.08em;
+    color: $color-purple-dark;
+  }
+  &__description {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    color: #48397f;
+    letter-spacing: 0.02em;
+  }
+  &__social-links {
+    display: flex;
+    text-align: center;
+    column-gap: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  &__icon {
+  }
+  &__icon-link {
+    color: $color-purple-dark;
+    z-index: 300;
+    font-size: 2rem;
+  }
+}
+// CONTACT US MEDIA QUERIES
+
+@media only screen and (max-width: 44.9rem) {
+  .contact {
+    &__card-container {
+      margin: 0 auto;
+    }
+  }
+}
