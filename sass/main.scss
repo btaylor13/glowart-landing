@@ -78,6 +78,7 @@ body {
     font-size: 3rem;
     margin-bottom: 1.7rem;
     text-shadow: 4px 4px 7px #b9aaaa;
+    line-height: 3.5rem;
   }
   &__description {
     font-size: 1rem;
@@ -96,7 +97,6 @@ body {
   }
   &__btn-container {
     margin-top: 3rem;
-    cursor: pointer;
   }
   &__make-art-btn {
     background-color: $color-purple-medium;
@@ -133,23 +133,32 @@ body {
   .header {
     &__heading-1 {
       font-size: 2.3rem;
+      line-height: 3rem;
+    }
+
+    &__logo {
+      font-size: 1.7rem;
     }
     &__nav-links {
       flex-direction: column;
       position: fixed;
       top: 5rem;
       left: -100%;
-      width: 100%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
       transition: all 0.3s;
       background-color: $color-white;
       box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-      justify-content: space-around;
+      border-radius: 2rem 0 2rem 0;
+
       padding-block: 3rem;
       row-gap: 1rem;
     }
 
     &__nav-links.active {
-      left: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
 
     &__nav-link {
@@ -158,6 +167,10 @@ body {
 
     &__nav-item + &__nav-item {
       margin-left: 0;
+    }
+
+    &__contact-link {
+      color: $color-white;
     }
 
     &__hamburger {
@@ -222,6 +235,7 @@ body {
     color: $color-purple-dark;
     font-size: 2.3rem;
     letter-spacing: 0.05em;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
   }
 
   &__video {
