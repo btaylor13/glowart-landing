@@ -23,6 +23,8 @@
     />
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Scripts -->
+    <script src="scripts.js" defer></script>
     <title>Glow Vibes Art</title>
     <body>
       <div class="page-container">
@@ -41,10 +43,15 @@
               <li class="header__nav-item">
                 <a class="header__nav-link" href="#tutorial">Try it now</a>
               </li>
-              <li class="header__nav-item contact-link">
+              <li class="header__nav-item header__contact-link">
                 <a class="header__nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
+            <div class="header__hamburger">
+              <span class="header__hamburger-bar"></span>
+              <span class="header__hamburger-bar"></span>
+              <span class="header__hamburger-bar"></span>
+            </div>
           </nav>
           <div class="header__content-container container">
             <div class="header__text-content">
@@ -95,7 +102,7 @@
               <div class="tutorial__row">
                 <div class="tutorial__instructions">
                   <!-- Step 1 of Tutorial -->
-                  <span class="tutorial__stepnum">01</span>
+                  <div class="tutorial__stepnum">01</div>
                   <p class="tutorial__description">
                     Select a photo. Search for an image you'd like to recreate
                     or to inspire your own creation. You can also choose an
@@ -111,8 +118,10 @@
                 </div>
               </div>
               <!-- Step 2 of Tutorial -->
-              <div class="tutorial__row">
-                <div class="tutorial__image-container">
+              <div class="tutorial__row tutorial__row--2">
+                <div
+                  class="tutorial__image-container tutorial__image-container--2"
+                >
                   <img
                     src="https://via.placeholder.com/150"
                     alt="step 2 of tutorial"
@@ -120,7 +129,7 @@
                   />
                 </div>
                 <div class="tutorial__instructions tutorial__instructions--2">
-                  <span class="tutorial__stepnum tutorial__stepnum--2">02</span>
+                  <div class="tutorial__stepnum tutorial__stepnum--2">02</div>
                   <p class="tutorial__description tutorial__description--2">
                     Once you upload an image, we'll extract the major colors for
                     your use! Simply click on which color you would like to use,
@@ -146,6 +155,12 @@
                     class="tutorial__image placeholder"
                   />
                 </div>
+              </div>
+              <div class="tutorial__btn">
+                <a href="#" class="tutorial__btn-link"
+                  >Make art now
+                  <i class="fa fa-palette tutorial__palette-icon"></i
+                ></a>
               </div>
             </div>
           </div>

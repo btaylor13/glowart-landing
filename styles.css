@@ -27,8 +27,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3.5rem;
-    padding-inline: 3rem; }
+    padding-inline: 3rem;
+    padding-block: 2rem; }
   .header__logo {
     font-family: "Faster One", cursive;
     font-size: 2rem;
@@ -39,12 +39,17 @@ body {
   .header__nav-links {
     list-style: none;
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    align-items: center; }
   .header__nav-link {
     text-decoration: none;
     color: white; }
   .header__nav-item + .header__nav-item {
     margin-left: 2.5rem; }
+  .header__contact-link {
+    background-color: #663ff3;
+    padding: 0.7em 1.7em;
+    border-radius: 3rem; }
   .header__content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -82,6 +87,50 @@ body {
   .header__palette-icon {
     color: white;
     z-index: 300; }
+  .header__hamburger {
+    display: none; }
+    .header__hamburger-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #101010; }
+
+@media only screen and (max-width: 46rem) {
+  .header__heading-1 {
+    font-size: 2.3rem; }
+  .header__nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    width: 100%;
+    transition: all 0.3s;
+    background-color: white;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    justify-content: space-around;
+    padding-block: 3rem;
+    row-gap: 1rem; }
+  .header__nav-links.active {
+    left: 0; }
+  .header__nav-link {
+    color: #120052; }
+  .header__nav-item + .header__nav-item {
+    margin-left: 0; }
+  .header__hamburger {
+    display: block;
+    cursor: pointer; }
+    .header__hamburger-bar {
+      color: white;
+      background-color: white; }
+    .header__hamburger.active .header__hamburger-bar:nth-child(2) {
+      opacity: 0; }
+    .header__hamburger.active .header__hamburger-bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg); }
+    .header__hamburger.active .header__hamburger-bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg); } }
 
 @media only screen and (max-width: 34.9rem) {
   .header__content-container {
@@ -105,7 +154,9 @@ body {
   .demo__heading {
     text-align: center;
     margin-top: 2rem;
-    color: #120052; }
+    color: #120052;
+    font-size: 2.3rem;
+    letter-spacing: 0.05em; }
   .demo__video {
     margin-top: 4rem;
     text-align: center;
@@ -128,7 +179,10 @@ body {
   .tutorial__heading {
     text-align: center;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.5);
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    font-size: 2.3rem;
+    letter-spacing: 0.03em;
+    color: #120052; }
   .tutorial__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -138,12 +192,15 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center; }
+  .tutorial__instructions {
+    color: #120052; }
   .tutorial__stepnum {
     font-family: "Faster One", "Open Sans";
     border-radius: 50%;
     color: #120052;
     background-color: white;
     width: 4.0625rem;
+    height: 4.0625rem;
     line-height: 4.0625rem;
     display: flex;
     align-items: center;
@@ -153,6 +210,34 @@ body {
     text-align: center; }
   .tutorial__description {
     display: inline-block; }
+  .tutorial__btn {
+    margin: 0 auto;
+    text-align: center;
+    color: #120052; }
+  .tutorial__btn-link {
+    color: #120052; }
+
+@media only screen and (max-width: 44.9rem) {
+  .tutorial__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+  .tutorial__instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    order: -1; }
+  .tutorial__stepnum {
+    margin-bottom: 1rem; }
+    .tutorial__stepnum--2 {
+      order: -1; }
+  .tutorial__description {
+    margin-bottom: 1rem; }
+    .tutorial__description--2 {
+      order: 1; } }
 
 .contact {
   background-color: #663ff3; }
@@ -163,7 +248,7 @@ body {
     text-align: center;
     color: white;
     letter-spacing: 0.11em;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-shadow: 0px 4px 4px rgba(17, 6, 60, 0.44); }
   .contact__card {
     background-color: white;
@@ -171,7 +256,7 @@ body {
     border-radius: 13px; }
   .contact__card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     row-gap: 2rem;
     justify-items: center; }
   .contact__image-container {
@@ -222,4 +307,6 @@ body {
 
 @media only screen and (max-width: 44.9rem) {
   .contact__card-container {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .contact__heading {
+    font-size: 2rem; } }
